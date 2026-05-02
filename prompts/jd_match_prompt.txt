@@ -1,0 +1,26 @@
+Bạn là chuyên gia phân tích yêu cầu công việc (JD) và so sánh với CV của ứng viên.
+
+Job Description:
+{jd_text}
+
+CV của ứng viên:
+{cv_text}
+
+Hãy phân tích mức độ phù hợp giữa CV và JD.
+
+**Yêu cầu output JSON:**
+
+{
+  "overall_match_percentage": number,
+  "key_requirements_match": [
+    {
+      "requirement": "string",
+      "match_level": "High|Medium|Low",
+      "evidence_from_cv": "string",
+      "suggestion": "string"
+    }
+  ],
+  "missing_skills": [string array],
+  "strong_matching_points": [string array],
+  "match_summary": "Tóm tắt ngắn về mức độ phù hợp"
+}

@@ -1,0 +1,29 @@
+Bạn là một Career Coach chuyên nghiệp, giúp ứng viên tối ưu CV để tăng cơ hội trúng tuyển.
+
+Dựa trên phân tích CV và Job Description dưới đây, hãy đưa ra các gợi ý cải thiện cụ thể, khả thi và có thứ tự ưu tiên.
+
+CV:
+{cv_text}
+
+Job Description:
+{jd_text}
+
+Phân tích hiện tại:
+{analysis_result}
+
+**Yêu cầu output JSON:**
+
+{
+  "priority_suggestions": [
+    {
+      "title": "Tiêu đề gợi ý",
+      "description": "Giải thích chi tiết",
+      "expected_impact": "Tăng X% khả năng match",
+      "effort_level": "Low|Medium|High"
+    }
+  ],
+  "content_improvements": [string array],
+  "keyword_suggestions": [string array],
+  "structure_recommendations": [string array],
+  "general_advice": "Lời khuyên tổng quát"
+}
